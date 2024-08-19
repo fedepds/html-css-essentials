@@ -1,4 +1,4 @@
-/*👇 General Styles */
+/*👇 Estilos Generales */
 body,
 html {
   margin: 0;
@@ -13,12 +13,12 @@ html {
   height: 100vh;
 }
 
-/*👇 Flexbox Layout */
+/*👇 Diseño de Flexbox */
 .flexbox-layout {
   display: flex;
   flex-direction: column;
   height: 50%;
-  background-color: #f0f8ff; /* Light blue background */
+  background-color: #f0f8ff; /* Fondo azul claro */
 }
 
 .flexbox-header,
@@ -32,11 +32,11 @@ html {
 }
 
 .flexbox-header {
-  background-color: #ffb6c1; /* Light pink */
+  background-color: #ffb6c1; /* Rosa claro */
 }
 
 .flexbox-nav {
-  background-color: #add8e6; /* Light blue */
+  background-color: #add8e6; /* Azul claro */
 }
 
 .flexbox-content {
@@ -45,20 +45,20 @@ html {
 }
 
 .flexbox-main {
-  background-color: #90ee90; /* Light green */
+  background-color: #90ee90; /* Verde claro */
   flex: 2;
 }
 
 .flexbox-sidebar {
-  background-color: #ffa07a; /* Light salmon */
+  background-color: #ffa07a; /* Salmón claro */
   flex: 1;
 }
 
 .flexbox-footer {
-  background-color: #d3d3d3; /* Light gray */
+  background-color: #d3d3d3; /* Gris claro */
 }
 
-/*👇 Grid Layout */
+/*👇 Diseño de Grid */
 .grid-layout {
   display: grid;
   height: 50%;
@@ -69,50 +69,50 @@ html {
     "footer footer";
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 2fr 1fr;
-  background-color: #fff0f5; /* Lavender blush background */
+  background-color: #fff0f5; /* Fondo lavanda */
 }
 
-/* 👆 How it works? 
+/* 👆 ¿Cómo funciona? 
 
-📝 Notes: 
+📝 Notas: 
 
-Grid Container (.grid-layout): display: grid;: Sets up the grid layout.
-height: 50%;: Sets the height of the grid container to 50% of its parent element's height.
-grid-template-areas:: Defines the named areas and their arrangement:
+Grid Container (.grid-layout): display: grid;: Configura el diseño de la cuadrícula.
+height: 50%;: Establece la altura del contenedor de la cuadrícula al 50% de la altura de su elemento padre.
+grid-template-areas:: Define las áreas con nombre y su disposición:
 
-"header header": The header spans both columns in the first row.
-"nav nav": The nav spans both columns in the second row.
-"main sidebar": The main content takes up the first column, and the sidebar takes up the second column in the third row.
-"footer footer": The footer spans both columns in the fourth row.
+"header header": El encabezado abarca ambas columnas en la primera fila.
+"nav nav": La navegación abarca ambas columnas en la segunda fila.
+"main sidebar": El contenido principal ocupa la primera columna y la barra lateral ocupa la segunda columna en la tercera fila.
+"footer footer": El pie de página abarca ambas columnas en la cuarta fila.
 
-⚠️ fr: The fr unit in CSS Grid Layout stands for "fraction of the available space" (For Grid System)
-It is a flexible unit that allows you to allocate portions of the available space within a grid container.
-The fr unit is especially useful for creating responsive grid layouts where you want to distribute space
-proportionally among grid items.
+⚠️ fr: La unidad fr en CSS Grid Layout significa "fracción del espacio disponible" (para el sistema de cuadrícula)
+Es una unidad flexible que te permite asignar porciones del espacio disponible dentro de un contenedor de cuadrícula.
+La unidad fr es especialmente útil para crear diseños de cuadrícula responsivos donde deseas distribuir el espacio
+proporcionalmente entre los elementos de la cuadrícula.
 
-grid-template-rows: auto auto 1fr auto;: Defines the heights of the rows:
-The first two rows (auto and auto) will adjust their heights based on their content.
-The third row (1fr) will take up the remaining available space.
-The fourth row (auto) will adjust its height based on its content.
-grid-template-columns: 2fr 1fr;: Defines the widths of the columns:
-The first column (2fr) will take up twice as much space as the second column (1fr). 
+grid-template-rows: auto auto 1fr auto;: Define las alturas de las filas:
+Las dos primeras filas (auto y auto) ajustarán su altura en función de su contenido.
+La tercera fila (1fr) ocupará el espacio disponible restante.
+La cuarta fila (auto) ajustará su altura en función de su contenido.
+grid-template-columns: 2fr 1fr;: Define los anchos de las columnas:
+La primera columna (2fr) ocupará el doble de espacio que la segunda columna (1fr). 
 
 AUTO vs FR
 
 ⭐️ auto
 
-Behavior: The size of the row or column is determined by the size of its content.
-If the content is small, the row or column will be small; if the content is large, the row or column will expand to fit it.
+Comportamiento: El tamaño de la fila o columna se determina por el tamaño de su contenido.
+Si el contenido es pequeño, la fila o columna será pequeña; si el contenido es grande, la fila o columna se expandirá para ajustarse.
 
-Usage: Best used when you want the grid tracks to fit tightly around their content.
+Uso: Se utiliza mejor cuando deseas que las pistas de la cuadrícula se ajusten estrechamente a su contenido.
 
 
 ⭐️ 1fr
 
-Behavior: The size of the row or column is a fraction of the remaining available space
-in the grid container. The fr unit stands for "fraction".
+Comportamiento: El tamaño de la fila o columna es una fracción del espacio disponible restante
+en el contenedor de la cuadrícula. La unidad fr significa "fracción".
 
-Usage: Best used when you want to distribute available space proportionally among grid tracks.
+Uso: Se utiliza mejor cuando deseas distribuir el espacio disponible proporcionalmente entre las pistas de la cuadrícula.
 
 */
 
@@ -127,26 +127,27 @@ Usage: Best used when you want to distribute available space proportionally amon
 }
 
 .grid-header {
-  background-color: #ffb6c1; /* Light pink */
+  background-color: #ffb6c1; /* Rosa claro */
   grid-area: header;
 }
 
 .grid-nav {
-  background-color: #add8e6; /* Light blue */
+  background-color: #add8e6; /* Azul claro */
   grid-area: nav;
 }
 
 .grid-main {
-  background-color: #90ee90; /* Light green */
+  background-color: #90ee90; /* Verde claro */
   grid-area: main;
 }
 
 .grid-sidebar {
-  background-color: #ffa07a; /* Light salmon */
+  background-color: #ffa07a; /* Salmón claro */
   grid-area: sidebar;
 }
 
 .grid-footer {
-  background-color: #d3d3d3; /* Light gray */
+  background-color: #d3d3d3; /* Gris claro */
   grid-area: footer;
 }
+

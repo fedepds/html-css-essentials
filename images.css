@@ -16,55 +16,55 @@ body {
 }
 
 .card {
-  width: 300px; /* Fixed width for all cards */
-  height: 200px; /* Fixed height for all cards */
-  overflow: hidden; /* Ensures overflow is hidden to crop images */
-  position: relative; /* Allows for relative positioning */
-  margin: 10px; /* Optional: Add margin for spacing between cards */
-  border: 1px solid violet; /* Optional: Border for styling */
-  box-shadow: 0 4px 8px rgba(238, 130, 238, 0.8); /* Neon violet shadow with 80% opacity */
+  width: 300px; /* Ancho fijo para todas las tarjetas */
+  height: 200px; /* Altura fija para todas las tarjetas */
+  overflow: hidden; /* Asegura que el contenido que se desborda se oculte */
+  position: relative; /* Permite el posicionamiento relativo */
+  margin: 10px; /* Opcional: Agrega margen para espaciado entre tarjetas */
+  border: 1px solid violet; /* Opcional: Borde para estilizar */
+  box-shadow: 0 4px 8px rgba(238, 130, 238, 0.8); /* Sombra violeta neón con 80% de opacidad */
   margin: 20px;
   border-radius: 5px;
 }
 
 .card img {
-  width: 100%; /* Fill the card's width */
-  height: 100%; /* Fill the card's height */
-  object-fit: cover; /* Cover the entire card, maintaining aspect ratio */
-  object-position: center; /* Center the image within the card */
+  width: 100%; /* Rellena el ancho de la tarjeta */
+  height: 100%; /* Rellena la altura de la tarjeta */
+  object-fit: cover; /* Cubre toda la tarjeta, manteniendo la relación de aspecto */
+  object-position: center; /* Centra la imagen dentro de la tarjeta */
 }
 
 .avatar-card {
-  width: 150px; /* Set the fixed width for the avatar */
-  height: 150px; /* Set the fixed height for the avatar */
-  overflow: hidden; /* Hide overflow to ensure the image is cropped */
-  border-radius: 50%; /* Makes the container a circle */
-  position: relative; /* For potential positioning of inner elements */
-  display: flex; /* Centering the image within the container */
-  align-items: center; /* Centering the image within the container */
-  justify-content: center; /* Centering the image within the container */
-  border: 2px solid #fff; /* Optional: Add a border for styling */
-  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.8); /* Teal neon shadow with 80% opacity */
+  width: 150px; /* Establece el ancho fijo para el avatar */
+  height: 150px; /* Establece la altura fija para el avatar */
+  overflow: hidden; /* Oculta el contenido que se desborda para asegurar que la imagen esté recortada */
+  border-radius: 50%; /* Hace que el contenedor sea un círculo */
+  position: relative; /* Para un posible posicionamiento de elementos internos */
+  display: flex; /* Centra la imagen dentro del contenedor */
+  align-items: center; /* Centra la imagen verticalmente dentro del contenedor */
+  justify-content: center; /* Centra la imagen horizontalmente dentro del contenedor */
+  border: 2px solid #fff; /* Opcional: Agrega un borde para estilizar */
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.8); /* Sombra neón turquesa con 80% de opacidad */
 }
 
 .avatar-card img {
-  width: 100%; /* Fill the avatar's width */
-  height: 100%; /* Fill the avatar's height */
-  object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
-  object-position: center; /* Center the image within the container */
-  border-radius: 50%; /* Ensures the image itself is also a circle */
+  width: 100%; /* Rellena el ancho del avatar */
+  height: 100%; /* Rellena la altura del avatar */
+  object-fit: cover; /* Cubre todo el contenedor, manteniendo la relación de aspecto */
+  object-position: center; /* Centra la imagen dentro del contenedor */
+  border-radius: 50%; /* Asegura que la imagen en sí también sea un círculo */
 }
 
-/* Summary
+/* Resumen
 
-- Container (.card): Set a fixed width and height,
-hide overflow, and optionally add styling for borders,
-margins, and shadows.
+- Contenedor (.card): Establece un ancho y altura fijos,
+oculta el desbordamiento y opcionalmente agrega estilos para bordes,
+márgenes y sombras.
 
-- Image (.card img): Ensure the image fills the card,
-maintains aspect ratio, and is centered and cropped if
-necessary using object-fit and object-position.
+- Imagen (.card img): Asegura que la imagen llene la tarjeta,
+mantenga la relación de aspecto y esté centrada y recortada si es necesario
+usando object-fit y object-position.
 
-- Result: Images of various sizes are uniformly displayed
-in cards of the same size without losing quality,
-maintaining their aspect ratio, and being centered within the card. */
+- Resultado: Las imágenes de varios tamaños se muestran uniformemente
+en tarjetas del mismo tamaño sin perder calidad,
+manteniendo su relación de aspecto y estando centradas dentro de la tarjeta. */

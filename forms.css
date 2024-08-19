@@ -1,5 +1,6 @@
 /* styles.css */
 
+/* Estilos generales del cuerpo del documento */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
@@ -8,6 +9,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Estilos del formulario */
 form {
   background: #fff;
   padding: 20px;
@@ -18,6 +20,7 @@ form {
   box-sizing: border-box;
 }
 
+/* Estilos del fieldset */
 fieldset {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -25,23 +28,27 @@ fieldset {
   padding: 10px;
 }
 
+/* Estilos de la leyenda */
 legend {
   padding: 0 10px;
   font-weight: bold;
 }
 
+/* Estilos de las filas del formulario */
 .form-row {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
+/* Estilos de las etiquetas de las filas del formulario */
 .form-row label {
   flex: 0 0 150px;
   margin-right: 10px;
   font-weight: bold;
 }
 
+/* Estilos de los campos de entrada, selección y área de texto */
 .form-row input,
 .form-row select,
 .form-row textarea {
@@ -52,12 +59,14 @@ legend {
   box-sizing: border-box;
 }
 
+/* Estilos de los botones del formulario */
 .form-buttons {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
 
+/* Estilos del botón principal */
 button {
   background-color: #007bff;
   color: #fff;
@@ -69,15 +78,18 @@ button {
   margin-left: 10px;
 }
 
+/* Estilos del botón principal al pasar el cursor sobre él */
 button:hover {
   background-color: #0056b3;
 }
 
+/* Estilos de los botones secundarios */
 button[type="reset"],
 button[type="button"] {
   background-color: #6c757d;
 }
 
+/* Estilos de los botones secundarios al pasar el cursor sobre ellos */
 button[type="reset"]:hover,
 button[type="button"]:hover {
   background-color: #5a6268;

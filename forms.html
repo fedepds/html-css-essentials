@@ -1,79 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"></html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 Form Example</title>
+    <title>Ejemplo de Formulario HTML5</title>
     <link rel="stylesheet" href="forms.css" />
   </head>
   <body>
-    <!-- Form Element -->
-    <form action="/submit" method="POST" autocomplete="on" novalidate>
-      <!-- Fieldset Element to group related elements -->
+    <!-- Elemento de Formulario -->
+    <form action="/enviar" method="POST" autocomplete="on" novalidate>
+      <!-- Elemento de Conjunto de Campos para agrupar elementos relacionados -->
       <fieldset>
-        <legend>Personal Information</legend>
-        <!-- Input Elements -->
+        <legend>Información Personal</legend>
+        <!-- Elementos de Entrada -->
         <div class="form-row">
-          <label for="fname">First Name:</label>
+          <label for="fname">Nombre:</label>
           <input
             type="text"
             id="fname"
             name="firstname"
-            placeholder="First Name"
+            placeholder="Nombre"
             required
           />
         </div>
         <div class="form-row">
-          <label for="lname">Last Name:</label>
+          <label for="lname">Apellido:</label>
           <input
             type="text"
             id="lname"
             name="lastname"
-            placeholder="Last Name"
+            placeholder="Apellido"
             required
           />
         </div>
         <div class="form-row">
-          <label for="email">Email:</label>
+          <label for="email">Correo Electrónico:</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="you@example.com"
+            placeholder="tucorreo@example.com"
             required
           />
         </div>
         <div class="form-row">
-          <label for="dob">Date of Birth:</label>
+          <label for="dob">Fecha de Nacimiento:</label>
           <input type="date" id="dob" name="dob" />
         </div>
         <div class="form-row">
-          <label for="favcolor">Favorite Color:</label>
+          <label for="favcolor">Color Favorito:</label>
           <input type="color" id="favcolor" name="favcolor" />
         </div>
       </fieldset>
 
-      <!-- Fieldset Element to group related elements -->
+      <!-- Elemento de Conjunto de Campos para agrupar elementos relacionados -->
       <fieldset>
-        <legend>Preferences</legend>
-        <!-- Select Element for drop-down list -->
+        <legend>Preferencias</legend>
+        <!-- Elemento de Selección para lista desplegable -->
         <div class="form-row">
-          <label for="country">Country:</label>
+          <label for="country">País:</label>
           <select id="country" name="country" required>
-            <option value="">Select a country</option>
-            <option value="usa">🇺🇸 USA</option>
-            <option value="canada">🇨🇦 Canada</option>
+            <option value="">Selecciona un país</option>
+            <option value="usa">🇺🇸 Estados Unidos</option>
+            <option value="canada">🇨🇦 Canadá</option>
             <option value="uruguay">🇺🇾 Uruguay</option>
           </select>
         </div>
-        <!-- Input Element with datalist for suggestions -->
+        <!-- Elemento de Entrada con datalist para sugerencias -->
         <div class="form-row">
-          <label for="browser">Preferred Browser:</label>
+          <label for="browser">Navegador Preferido:</label>
           <input
             list="browsers"
             id="browser"
             name="browser"
-            placeholder="Choose a browser..."
+            placeholder="Elige un navegador..."
           />
           <datalist id="browsers">
             <option value="Chrome"></option>
@@ -83,35 +83,35 @@
             <option value="Opera"></option>
           </datalist>
         </div>
-        <!-- Textarea Element -->
+        <!-- Elemento de Textarea -->
         <div class="form-row">
-          <label for="comments">Comments:</label>
+          <label for="comments">Comentarios:</label>
           <textarea
             id="comments"
             name="comments"
             rows="4"
             cols="50"
-            placeholder="Your comments..."
+            placeholder="Tus comentarios..."
           ></textarea>
         </div>
-        <!-- Checkbox Elements -->
+        <!-- Elementos de Checkbox -->
         <div class="form-row">
-          <label>Food Preferences:</label>
+          <label>Preferencias Alimentarias:</label>
           <div>
             <label for="vegetarian">
               <input
                 type="checkbox"
                 id="vegetarian"
                 name="food"
-                value="vegetarian"
+                value="vegetariano"
               />
-              Vegetarian
+              Vegetariano
             </label>
           </div>
           <div>
             <label for="vegan">
-              <input type="checkbox" id="vegan" name="food" value="vegan" />
-              Vegan
+              <input type="checkbox" id="vegan" name="food" value="vegano" />
+              Vegano
             </label>
           </div>
           <div>
@@ -120,35 +120,35 @@
                 type="checkbox"
                 id="glutenfree"
                 name="food"
-                value="gluten-free"
+                value="sin gluten"
               />
-              Gluten-free
+              Sin Gluten
             </label>
           </div>
         </div>
-        <!-- Radio Button Elements -->
+        <!-- Elementos de Radio Button -->
         <div class="form-row">
-          <label>Gender:</label>
+          <label>Género:</label>
           <div>
             <label for="male">
-              <input type="radio" id="male" name="gender" value="male" /> Male
+              <input type="radio" id="male" name="gender" value="masculino" /> Masculino
             </label>
           </div>
           <div>
             <label for="female">
-              <input type="radio" id="female" name="gender" value="female" />
-              Female
+              <input type="radio" id="female" name="gender" value="femenino" />
+              Femenino
             </label>
           </div>
         </div>
       </fieldset>
 
-      <!-- Fieldset Element to group additional information -->
+      <!-- Elemento de Conjunto de Campos para información adicional -->
       <fieldset>
-        <legend>Additional Information</legend>
-        <!-- Input Elements for various types -->
+        <legend>Información Adicional</legend>
+        <!-- Elementos de Entrada para varios tipos -->
         <div class="form-row">
-          <label for="quantity">Quantity:</label>
+          <label for="quantity">Cantidad:</label>
           <input
             type="number"
             id="quantity"
@@ -159,11 +159,11 @@
           />
         </div>
         <div class="form-row">
-          <label for="appt">Appointment Time:</label>
+          <label for="appt">Hora de la Cita:</label>
           <input type="time" id="appt" name="appt" />
         </div>
         <div class="form-row">
-          <label for="phone">Phone Number:</label>
+          <label for="phone">Número de Teléfono:</label>
           <input
             type="tel"
             id="phone"
@@ -172,30 +172,30 @@
           />
         </div>
         <div class="form-row">
-          <label for="homepage">Homepage:</label>
+          <label for="homepage">Página de Inicio:</label>
           <input
             type="url"
             id="homepage"
             name="homepage"
-            placeholder="https://example.com"
+            placeholder="https://ejemplo.com"
           />
         </div>
         <div class="form-row">
-          <label for="search">Search:</label>
+          <label for="search">Búsqueda:</label>
           <input
             type="search"
             id="search"
             name="search"
-            placeholder="Search..."
+            placeholder="Buscar..."
           />
         </div>
       </fieldset>
 
-      <!-- Button Elements -->
+      <!-- Elementos de Botón -->
       <div class="form-buttons">
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-        <button type="button" onclick="alert('Hello!')">Click me</button>
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+        <button type="button" onclick="alert('¡Hola!')">Haz clic</button>
       </div>
     </form>
   </body>

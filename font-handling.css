@@ -1,36 +1,36 @@
-/* ⚪️ Monospaced Fonts
+/* ⚪️ Fuentes Monoespaciadas
 
-Monospaced fonts have consistent character widths, which can make it easier to predict and manage overflow issues.
+Las fuentes monoespaciadas tienen anchos de caracteres consistentes, lo que puede facilitar la predicción y el manejo de problemas de desbordamiento.
 
-Fixed Width Containers: */
+Contenedores de ancho fijo: */
 
 .monospaced-container {
   font-family: Courier, monospace;
-  white-space: pre-wrap; /* Maintain formatting but allow wrapping */
-  overflow-wrap: break-word; /* Break long words to prevent overflow */
-  word-break: break-all; /* Force breaking of words */
+  white-space: pre-wrap; /* Mantener el formato pero permitir el ajuste de línea */
+  overflow-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
+  word-break: break-all; /* Forzar la ruptura de palabras */
 }
 
-/* ⚪️ Non-Monospaced Fonts
-  
-  Non-monospaced fonts have varying character widths, which makes it a bit more complex to predict and handle overflow.
-  
-  Responsive Width: */
+/* ⚪️ Fuentes No Monoespaciadas
+
+Las fuentes no monoespaciadas tienen anchos de caracteres variables, lo que hace un poco más complejo predecir y manejar el desbordamiento.
+
+Ancho Responsivo: */
 
 .non-monospaced-container {
   font-family: Arial, sans-serif;
-  white-space: normal; /* Allow normal wrapping */
-  overflow-wrap: break-word; /* Break long words to prevent overflow */
-  word-break: normal; /* Break words normally */
+  white-space: normal; /* Permitir ajuste de línea normal */
+  overflow-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
+  word-break: normal; /* Romper palabras de forma normal */
 }
 
-/* ⚪️ General Techniques for Both Font Types */
+/* ⚪️ Técnicas Generales para Ambos Tipos de Fuentes */
 
 /* Flexbox: */
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten */
 }
 
 /* Grid Layout: */
@@ -40,47 +40,47 @@ Fixed Width Containers: */
   grid-template-columns: repeat(
     auto-fill,
     minmax(100px, 1fr)
-  ); /* Adjust columns to fit */
+  ); /* Ajustar columnas para que encajen */
   gap: 10px;
 }
 
-/* ⚪️ Overflow Handling:
-  
-  Use overflow properties to manage content that exceeds the container. */
+/* ⚪️ Manejo de Desbordamiento
+
+Utiliza las propiedades de desbordamiento para gestionar el contenido que excede el contenedor. */
 
 .overflow-hidden {
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden; /* Ocultar el desbordamiento */
 }
 
 .overflow-auto {
-  overflow-x: auto; /* Allow horizontal scrolling */
-  white-space: nowrap; /* Prevent text wrapping */
+  overflow-x: auto; /* Permitir desplazamiento horizontal */
+  white-space: nowrap; /* Evitar el ajuste de texto */
 }
 
-/* Text Ellipsis: */
+/* Texto con puntos suspensivos: */
 
 .text-ellipsis {
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis (...) */
+  white-space: nowrap; /* Evitar el ajuste de texto */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  text-overflow: ellipsis; /* Agregar puntos suspensivos (...) */
 }
 
 .break-word {
   white-space: normal;
-  overflow-wrap: break-word; /* Break long words to prevent overflow */
-  word-break: break-all; /* Force breaking of words */
+  overflow-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
+  word-break: break-all; /* Forzar la ruptura de palabras */
 }
 
-/* Media Queries: */
+/* Consultas de medios: */
 
 @media (max-width: 600px) {
   .responsive-container {
-    font-size: smaller; /* Adjust font size */
-    width: 100%; /* Ensure container fits */
+    font-size: smaller; /* Ajustar el tamaño de fuente */
+    width: 100%; /* Asegurar que el contenedor se ajuste */
   }
 }
 
-/* Define the custom font */
+/* Define la fuente personalizada */
 @font-face {
   font-family: "MyCustomFont";
   src: url("/path/to/fonts/MyCustomFont.woff2") format("woff2"),
@@ -89,7 +89,8 @@ Fixed Width Containers: */
   font-style: normal;
 }
 
-/* Apply the custom font */
+/* Aplica la fuente personalizada */
 .custom-font {
   font-family: "MyCustomFont", sans-serif;
 }
+
